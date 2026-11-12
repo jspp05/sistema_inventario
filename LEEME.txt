@@ -1,0 +1,6 @@
+INSTALACIÓN (XAMPP)
+1. Copia la carpeta "sistema_inventario" dentro de C:\xampp\htdocs\
+2. Inicia Apache y MySQL desde el panel de XAMPP.
+3. Abre http://localhost/phpmyadmin → pestaña "Importar" → selecciona database.sql → Continuar.
+4. Si tu MySQL tiene contraseña, cámbiala en config/conexion.php.
+5. Abre http://localhost/sistema_inventario/

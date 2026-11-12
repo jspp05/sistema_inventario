@@ -1,0 +1,42 @@
+:root{--azul:#14304d;--verde:#1f7a4d;--gris:#e8edf3;--texto:#1b2a3a;--fondo:#f3f5f9}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:var(--fondo);color:var(--texto)}
+.container{max-width:960px;margin:0 auto;padding:0 16px}
+.navbar{background:var(--azul);color:#fff;padding:14px 0}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.navbar nav a{color:#cfe0f1;text-decoration:none;margin-left:16px;font-size:14px;padding-bottom:3px}
+.navbar nav a.activo{color:#fff;border-bottom:2px solid #4fd1a1}
+main{padding-top:24px;padding-bottom:40px}
+h1{margin:0 0 4px}
+.sub{color:#5b6b7c;font-size:14px;margin-top:0}
+.titulo-fila{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}
+.card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card span{display:block;font-size:12px;color:#5b6b7c}
+.card strong{font-size:26px}
+.panel{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:16px}
+.btn{display:inline-block;border:0;border-radius:6px;padding:9px 16px;font-size:14px;cursor:pointer;text-decoration:none}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-gris{background:var(--gris);color:var(--texto)}
+.acciones{display:flex;gap:10px;margin-top:16px}
+.controles{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.controles input[type=text]{flex:1;min-width:200px}
+input,select{padding:9px 10px;border:1px solid #cdd6e0;border-radius:6px;font-size:14px;width:100%}
+.controles input,.controles select{width:auto}
+.contador{font-size:14px;color:#5b6b7c;font-weight:600}
+.tabla-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{background:var(--azul);color:#fff;text-align:left;padding:10px}
+tbody td{padding:10px;border-bottom:1px solid #edf0f4}
+.estado-activo,.estado-inactivo{padding:2px 10px;border-radius:999px;font-size:12px}
+.estado-activo{background:#e1f5ea;color:#1f7a4d}
+.estado-inactivo{background:#fde8e8;color:#b42323}
+.formulario label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px}
+.formulario input,.formulario select{max-width:360px}
+.campo-error{border-color:#b42323 !important}
+.alerta{background:#fde8e8;color:#8a1c1c;border-radius:8px;padding:10px 14px;margin-bottom:14px}
+.alerta p{margin:2px 0}
+.oculto{display:none}
+.detalle dl{display:grid;grid-template-columns:140px 1fr;gap:10px}
+.detalle dt{font-weight:600}.detalle dd{margin:0}
+.footer{text-align:center;font-size:12px;color:#6b7a8a;padding:20px}
